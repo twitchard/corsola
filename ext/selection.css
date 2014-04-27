@@ -1,0 +1,119 @@
+@CHARSET "UTF-8";
+
+body {
+	font-family: sans-serif;
+}
+
+#scheduleContainer {
+	float: left;
+}
+
+#header {
+	float: left;
+	width: 100%;
+	height: 20px;
+	
+}
+
+#header div {
+	float: left;
+	width: 17%;
+	line-height:12px;
+	font-size: 1.3em;
+}
+#header div:first-of-type {
+	width: 12.5%;
+}
+
+#times {
+	float: left;
+	width: 12.5%;
+	height: 100%;
+	text-align: right;
+	
+}
+.day {
+	position: relative;
+	float: left;
+	width: 17%;
+	height: 100%;
+	background: white;
+	border: 1px solid black;
+	border-right:none;
+}
+.day:last-of-type {
+	border-right:1px solid black;
+}
+
+.timeDisplay{
+width:100%;
+/* padding:5px; */
+text-align: center;
+border-top: black double 4px;
+border-bottom: black double 4px;
+}
+
+
+#preferred {
+	float: left;
+	overflow-x: visible;
+	overflow-y: auto;
+	height: 800px;
+	width: 300px;
+	text-align: center;
+}
+
+.courseDisplay {
+	border-style: outset;
+	cursor: hand;
+	cursor: pointer;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.selectedCourseDisplay {
+	border-style: inset;
+}
+
+.hungryCourseDisplay {
+	width: 100%;
+	padding: 30px;
+}
+
+.groupDisplay {
+	width: 100%;
+	padding: 5px;
+	border: outset thick;
+}
+
+.selectedGroupDisplay {
+	border-style: inset;
+}
+
+.groupedCourseDisplay {
+	border-style: solid;
+	border-color: black !important;
+	margin-top: 3px;
+}
+
+.activeCourseDisplay {
+	border-color: white !important;
+}
+
+.conflict {
+	z-index: 100;
+	background: rgba(255, 0, 0, .5);
+	width: 100%;
+	position: relative;
+	border: 5px red dotted;
+}
+
+.daylist {
+	font-weight: bold;
+}
+
+.conflictedCourseDisplay {
+	border-style: dotted;
+	border-color: black !important;
+}

@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name" : "W&L Corsola",
+  "description": "W&L Students can visually plan out their schedule",
+  "version" : "0.14",
+  "permissions": [
+    "https://managementtools.wlu.edu/CourseOfferings/",
+    "https://managementtools3.wlu.edu/CourseOfferings/",
+    "http://managementtools.wlu.edu/CourseOfferings/",
+    "http://managementtools3.wlu.edu/CourseOfferings/"
+  ],
+  "content_scripts": [
+    {
+      "matches" : [
+        "*://managementtools3.wlu.edu/CourseOfferings*",
+        "*://managementtools.wlu.edu/CourseOfferings*"
+      ],
+      "js": ["jquery-1.9.1.js", "jquery-ui-1.10.3.custom.min.js", "contentscript.js"],
+      "css" : ["jquery-ui-1.10.3.custom.min.css"]
+    }
+
+    
+  ],
+  "web_accessible_resources": ["visualizer.html", "selection.css"]
+  
+}
